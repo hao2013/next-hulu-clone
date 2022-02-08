@@ -20,8 +20,9 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Learn More
 
-`npm install @heroicons/react`
-`npm i react-flip-move`
-`npm install -D tailwindcss postcss autoprefixer`
-`npx tailwindcss init -p`
-`npm i tailwind-scrollbar-hide`
+```npm install @heroicons/react
+npm i react-flip-move
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm i tailwind-scrollbar-hide
+```
