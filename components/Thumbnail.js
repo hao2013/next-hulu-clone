@@ -8,7 +8,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
   return (
     <div
       ref={ref}
-      className="p-1 group cursor-pointer transition duration-500 ease-in-out transform sm:hover:scale-110 hover:z-50"
+      className="p-2 group cursor-pointer transition duration-500 ease-in-out transform sm:hover:scale-110 hover:z-50"
     >
       <Image
         layout="responsive"
@@ -33,7 +33,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
           </span>
         </p>
 
-        <p className="truncate max-w-md mb-3 opacity-0 group-hover:opacity-100">
+        <p className="truncate max-w-md mb-3 opacity-100 sm:opacity-0 group-hover:opacity-100 ">
           {result.overview}
         </p>
       </div>
