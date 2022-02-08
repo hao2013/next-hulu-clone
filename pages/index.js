@@ -5,23 +5,17 @@ import Results from '../components/Results'
 import requests from '../utils/requests'
 
 export default function Home({results}) {
-
   return (
     <div>
       <Head>
-        <title>クロー練習--Hulu</title>
+        <title>Next.jsの練習--huluのクローン</title>
       </Head>
-
       <Header />
-
       <Nav />
-
       <Results results={results} />
     </div>
-
   )
 }
-
 
 export async function getServerSideProps(context) {
   const genre = context.query.genre;
