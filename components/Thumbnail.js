@@ -2,8 +2,9 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { forwardRef } from "react";
 
-const Thumbnail = forwardRef(function({ result }, ref) {
+const Thumbnail = forwardRef(({ result }, ref) => {
 
+  forwardRef.displayName = "movieWarp";
   const BASE_URL = "https://image.tmdb.org/t/p/original";
 
   return (
@@ -39,7 +40,9 @@ const Thumbnail = forwardRef(function({ result }, ref) {
         </p>
       </div>
     </div>
+    
   );
+
 });
 
 export default Thumbnail;
