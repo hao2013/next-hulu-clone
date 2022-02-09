@@ -2,9 +2,8 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { forwardRef } from "react";
 
-const Thumbnail = forwardRef(({ result }, ref) => {
-
-  forwardRef.displayName = "movieWarp";
+const Thumbnail = forwardRef(
+  ({ result }, ref) => {
   const BASE_URL = "https://image.tmdb.org/t/p/original";
 
   return (
@@ -40,9 +39,12 @@ const Thumbnail = forwardRef(({ result }, ref) => {
         </p>
       </div>
     </div>
-    
   );
+  }
+);
 
-});
+// ESLintのmissing display name エラー解消
+// https://chaika.hatenablog.com/entry/2021/10/07/083000
+Thumbnail.displayName = 'Thumbnail';
 
 export default Thumbnail;
